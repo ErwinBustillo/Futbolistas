@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearL"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/fila1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textoNombre"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="Nombre" />
+
+        <TextView
+            android:id="@+id/textoApellido"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="Apellido" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fila2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textoPosicion"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="Posicion" />
+
+        <TextView
+            android:id="@+id/textoCandidato"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="on/off" />
+
+        <Button
+            android:id="@+id/botonEditar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:onClick="onClickEditar"
+            android:text="Edit" />
+    </LinearLayout>
+</LinearLayout>
